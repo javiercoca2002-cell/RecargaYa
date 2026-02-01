@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecargaYa - Recargas Instantáneas en Cuba</title>
+    
+    <!-- Enlaces a archivos externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon (opcional) -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <img src="assets/logo.png" alt="RecargaYa Logo" class="nav-logo-img">
+                <span class="nav-logo-text">RecargaYa</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#ofertas" class="nav-link">Ofertas</a>
+                <a href="#testimonios" class="nav-link">Clientes</a>
+                <a href="#garantias" class="nav-link">Garantías</a>
+                <a href="#instrucciones" class="nav-link">Instrucciones</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container" id="inicio">
+        <!-- Header con logo -->
+        <div class="header-brand">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="RecargaYa" class="brand-logo-img">
+                <div class="brand-name">RecargaYa</div>
+            </div>
+            <p class="brand-tagline">Recargas instantáneas de saldo móvil en Cuba</p>
+        </div>
+        
+        <div class="ofertas-container">
+            <!-- Sección de Ofertas -->
+            <section id="ofertas" class="section-anchor">
+                <!-- OFERTA 1: Recarga Básica -->
+                <div class="oferta shine-effect">
+                    <span class="etiqueta etiqueta-economico">Lo más económico</span>
+                    <h3><i class="fas fa-star"></i> Recarga Básica</h3>
+                    <p class="descripcion-oferta"><strong>2GB + 15 Min + 20 SMS</strong> - Ideal para poco uso</p>
+                    
+                    <div class="precio-container">
+                        <span class="precio-tachado">520 CUP</span>
+                        <div class="precio">450</div>
+                    </div>
+                    
+                    <div class="mensaje-precio">Precio directo y económico</div>
+                    <ul class="beneficios">
+                        <li><strong>120 CUP</strong> de saldo móvil</li>
+                        <li>Recarga instantánea en segundos</li>
+                        <li>Atención rápida y personalizada</li>
+                    </ul>
+                    <button class="whatsapp-btn" onclick="comprarOferta('Recarga Básica: 2GB + 15 Min + 20 SMS', '450 CUP', 'RB-450')">
+                        <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                    </button>
+                </div>
+                
+                <!-- OFERTA 2: Recarga Estándar -->
+                <div class="oferta shine-effect">
+                    <h3><i class="fas fa-crown"></i> Recarga Estándar</h3>
+                    <p class="descripcion-oferta"><strong>4GB + 35 Min + 40 SMS</strong> - Ideal para uso semanal</p>
+                    
+                    <div class="precio-container">
+                        <span class="precio-tachado">980 CUP</span>
+                        <div class="precio">900</div>
+                    </div>
+                    
+                    <div class="mensaje-precio">Sin variaciones - Precio justo</div>
+                    <ul class="beneficios">
+                        <li><strong>240 CUP</strong> de saldo móvil</li>
+                        <li>Recarga instantánea en segundos</li>
+                        <li>Atención rápida y personalizada</li>
+                    </ul>
+                    <button class="whatsapp-btn" onclick="comprarOferta('Recarga Estándar: 4GB + 35 Min + 40 SMS', '900 CUP', 'RE-900')">
+                        <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                    </button>
+                </div>
+                
+                <!-- OFERTA 3: Recarga Premium -->
+                <div class="oferta shine-effect">
+                    <span class="etiqueta etiqueta-vendido">Lo más vendido</span>
+                    <h3><i class="fas fa-gem"></i> Recarga Premium</h3>
+                    <p class="descripcion-oferta"><strong>6GB + 60 Min + 70 SMS</strong> - Para uso intensivo mensual</p>
+                    
+                    <div class="precio-container">
+                        <span class="precio-tachado">1350 CUP</span>
+                        <div class="precio">1200</div>
+                    </div>
+                    
+                    <div class="mensaje-precio">Mejor relación precio/valor</div>
+                    <ul class="beneficios">
+                        <li><strong>360 CUP</strong> de saldo móvil</li>
+                        <li>Recarga instantánea en segundos</li>
+                        <li>Atención rápida y personalizada</li>
+                    </ul>
+                    <button class="whatsapp-btn" onclick="comprarOferta('Recarga Premium: 6GB + 60 Min + 70 SMS', '1200 CUP', 'RP-1200')">
+                        <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                    </button>
+                </div>
+            </section>
+            
+            <!-- Sección de Testimonios -->
+            <section id="testimonios" class="section-anchor">
+                <div class="testimonios-section">
+                    <h3><i class="fas fa-comment-dots"></i> Lo que dicen nuestros clientes</h3>
+                    <div class="testimonios-grid">
+                        <!-- Testimonios existentes -->
+                        <div class="testimonio">
+                            <p class="testimonio-text">"Esta es mi solución cada mes. La recarga de 360 me da todo lo que necesito para tener internet el mes entero sumado a la que me vende ETECSA. Siempre responden rápido y el saldo llega en segundos. ¡100% confiable!"</p>
+                            <div class="testimonio-autor">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Carlos M. - La Habana</span>
+                                <div class="estrellas">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonio">
+                            <p class="testimonio-text">"Necesitaba saldo urgente para contactar con mi familia en el exterior y en menos de 3 minutos ya lo tenía. El proceso es súper sencillo y la atención es excelente. ¡Los recomiendo!"</p>
+                            <div class="testimonio-autor">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Ana L. - Santiago de Cuba</span>
+                                <div class="estrellas">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonio">
+                            <p class="testimonio-text">"Llevo más de 6 meses usando RecargaYa para mi negocio. Las ofertas son las mejores que he encontrado y nunca he tenido problemas. Atención personalizada que marca la diferencia."</p>
+                            <div class="testimonio-autor">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Miguel R. - Camagüey</span>
+                                <div class="estrellas">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulario para nuevas reseñas -->
+                    <div class="nueva-resena-container">
+                        <h4><i class="fas fa-edit"></i> Deja tu reseña</h4>
+                        <div class="form-resena">
+                            <input type="text" id="nombre-resena" placeholder="Tu nombre (ej: Juan P.)" class="input-resena">
+                            <input type="text" id="ubicacion-resena" placeholder="Tu ubicación (ej: La Habana)" class="input-resena">
+                            <textarea id="texto-resena" placeholder="Escribe tu experiencia con RecargaYa..." class="textarea-resena"></textarea>
+                            <div class="calificacion-resena">
+                                <span>Calificación:</span>
+                                <div class="estrellas-calificacion">
+                                    <i class="far fa-star" data-value="1"></i>
+                                    <i class="far fa-star" data-value="2"></i>
+                                    <i class="far fa-star" data-value="3"></i>
+                                    <i class="far fa-star" data-value="4"></i>
+                                    <i class="far fa-star" data-value="5"></i>
+                                </div>
+                            </div>
+                            <button id="publicar-resena" class="btn-publicar">
+                                <i class="fas fa-paper-plane"></i> Publicar Reseña
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Garantías -->
+            <section id="garantias" class="section-anchor">
+                <div class="garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Transacción Segura</h4>
+                        <p>Todas las operaciones son verificadas personalmente</p>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Recarga Instantánea</h4>
+                        <p>Tu saldo te llega en menos de 5 minutos</p>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-headset"></i>
+                        <h4>Soporte Personal</h4>
+                        <p>Atención directa vía WhatsApp en todo momento</p>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-award"></i>
+                        <h4>Calidad Garantizada</h4>
+                        <p>+1000 recargas exitosas sin inconvenientes</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Instrucciones -->
+            <section id="instrucciones" class="section-anchor">
+                <div class="instrucciones">
+                    <h4><i class="fas fa-info-circle"></i> ¿Cómo comprar en RecargaYa?</h4>
+                    <div class="pasos">
+                        <div class="paso">
+                            <div class="numero">1</div>
+                            <p>Selecciona tu oferta ideal</p>
+                        </div>
+                        <div class="paso">
+                            <div class="numero">2</div>
+                            <p>Haz clic en el botón verde</p>
+                        </div>
+                        <div class="paso">
+                            <div class="numero">3</div>
+                            <p>Te enviaré los datos de pago</p>
+                        </div>
+                        <div class="paso">
+                            <div class="numero">4</div>
+                            <p>Realiza el pago y envía comprobante</p>
+                        </div>
+                        <div class="paso">
+                            <div class="numero">5</div>
+                            <p>Recibe tu saldo al instante</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sección de Contacto -->
+            <section id="contacto" class="section-anchor">
+                <div class="disclaimer">
+                    <p><i class="fas fa-certificate" style="color:#26d0ce;"></i> <strong>RecargaYa</strong> - Tu solución confiable de recargas en Cuba</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Horario: 9:00 AM - 9:00 PM (Todos los días)</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjetas de Contacto -->
+                    <div class="tarjetas-contacto">
+                        <a href="https://wa.me/53563954759" target="_blank" class="tarjeta-contacto whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <div class="tarjeta-contenido">
+                                <h4>WhatsApp</h4>
+                                <p>+53 63954759</p>
+                                <span class="tarjeta-boton">Enviar mensaje</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://t.me/63954759" target="_blank" class="tarjeta-contacto telegram">
+                            <i class="fab fa-telegram"></i>
+                            <div class="tarjeta-contenido">
+                                <h4>Telegram</h4>
+                                <p>@63954759</p>
+                                <span class="tarjeta-boton">Contactar por Telegram</span>
+                            </div>
+                        </a>
+                        
+                        <a href="#" target="_blank" class="tarjeta-contacto facebook">
+                            <i class="fab fa-facebook"></i>
+                            <div class="tarjeta-contenido">
+                                <h4>Facebook</h4>
+                                <p>@RecargaYaCuba</p>
+                                <span class="tarjeta-boton">Visitar página</span>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:contacto@recargaya.com" class="tarjeta-contacto correo">
+                            <i class="fas fa-envelope"></i>
+                            <div class="tarjeta-contenido">
+                                <h4>Correo Electrónico</h4>
+                                <p>contacto@recargaya.com</p>
+                                <span class="tarjeta-boton">Enviar email</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <p style="margin-top: 20px; font-size: 14px; color: #888;">
+                        © 2025-2026 RecargaYa. Todos los derechos reservados.<br>
+                        Servicio de recargas móviles.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="reseñas.js"></script>
+</body>
+</html>
