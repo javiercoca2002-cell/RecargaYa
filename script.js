@@ -1,5 +1,5 @@
 // Configuración
-const tuWhatsApp = "5353954759";
+const tuWhatsApp = "5363954759";
 const nombreEmpresa = "RecargaYa";
 
 // Función mejorada para comprar ofertas (SIN EMOJIS)
