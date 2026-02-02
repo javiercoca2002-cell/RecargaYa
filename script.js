@@ -13,8 +13,8 @@ function comprarOferta(nombreOferta, precio, codigoOferta) {
                    `CODIGO: ${codigoOferta}\n` +
                    `----------------------------------------\n\n` +
                    `Por favor, envienme los datos para realizar el pago.\n` +
-                   `(Numero de tarjeta, nombre y referencia especifica)\n\n` +
-                   `Saludos cordiales.`;
+                   `(Número de tarjeta y número a confirmar pago)\n\n` +
+                   `Saludos.`;
     
     // Codificar para URL
     const mensajeCodificado = encodeURIComponent(mensaje);
