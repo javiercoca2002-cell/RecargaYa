@@ -166,11 +166,11 @@ body {
 .etiqueta {
     position: absolute;
     top: 20px;
-    right: calc(50% - 75px);  /* Centrado matemático: mitad del ancho (150px/2) */
+    right: -38px;  /* Cambiado de -40px a -38px (2px más hacia el centro) */
     width: 150px;
     padding: 8px 10px;
-    transform: rotate(45deg) translateX(50%);  /* Centrado con translate */
-    transform-origin: center center;
+    transform: rotate(45deg);
+    transform-origin: center center;  /* Especificado ambos ejes */
     font-size: 11px;
     font-weight: bold;
     color: white;
@@ -181,16 +181,17 @@ body {
     overflow: hidden;
 }
 
+/* Ajustes específicos para cada etiqueta */
 .etiqueta-vendido {
     background: linear-gradient(135deg, #FF5722, #E64A19);
     border: 1px solid #D84315;
-    right: calc(50% - 70px);  /* Ajuste fino para texto más corto */
+    right: -36px;  /* "LO MÁS VENDIDO" necesita menos ajuste (texto más corto) */
 }
 
 .etiqueta-economico {
     background: linear-gradient(135deg, #4CAF50, #388E3C);
     border: 1px solid #2E7D32;
-    right: calc(50% - 80px);  /* Ajuste fino para texto más largo */
+    right: -40px;  /* "LO MÁS ECONÓMICO" necesita más ajuste (texto más largo) */
 }
 
 .oferta h3 {
