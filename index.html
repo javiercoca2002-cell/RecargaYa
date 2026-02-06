@@ -21,11 +21,16 @@
 <body>
     <!-- Menú de Navegación -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#inicio" class="nav-logo">
-                <img src="assets/logo.png" alt="RecargaYa Logo" class="nav-logo-img">
-                <span class="nav-logo-text">RecargaYa</span>
-            </a>
+    <div class="nav-container">
+        <a href="#inicio" class="nav-logo">
+            <img src="assets/logo.png" alt="RecargaYa Logo" class="nav-logo-img">
+            <span class="nav-logo-text">RecargaYa</span>
+        </a>
+        <div class="nav-info">
+            <div class="horario-indicador" id="horario-indicador">
+                <i class="fas fa-clock"></i>
+                <span id="horario-texto">Cargando...</span>
+            </div>
             <div class="nav-menu">
                 <a href="#ofertas" class="nav-link">Ofertas</a>
                 <a href="#testimonios" class="nav-link">Clientes</a>
@@ -34,7 +39,8 @@
                 <a href="#contacto" class="nav-link">Contacto</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Modal para QR (oculto por defecto) -->
     <div id="modal-qr" class="modal-qr">
