@@ -996,7 +996,28 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    body {
+    
+    .nav-info {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .horario-indicador {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .nav-menu {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+}  
+
+ body {
         padding-top: 70px;
     }
 
